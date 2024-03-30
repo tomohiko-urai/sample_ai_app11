@@ -2,7 +2,7 @@
 #import model as shinemuscat_chk 
 import sys, os
 from PIL import Image
-import numpy as np
+#import numpy as np
 #import cv2 
 import streamlit as st
 import cv2
