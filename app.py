@@ -6,7 +6,7 @@ from PIL import Image
 #import cv2 
 import streamlit as st
 import cv2
-####from ultralytics import YOLO
+from ultralytics import YOLO
 
 
 image_size = 50
@@ -14,7 +14,7 @@ image_size = 50
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
-st.sidebar.title("シャインマスカット認識認識アプリ")
+st.sidebar.title("シャインマスカット認識認識アプリ-ai-app11")
 st.sidebar.write("オリジナルの画像認識モデルを使ってシャインマスカット物体認識をします。")
 
 st.sidebar.write("")
