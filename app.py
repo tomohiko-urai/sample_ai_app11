@@ -6,7 +6,7 @@ from PIL import Image
 
 import streamlit as st
 #import cv2
-from ultralytics import YOLO
+#from ultralytics import YOLO
 
 
 image_size = 50
