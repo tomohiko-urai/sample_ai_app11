@@ -1,6 +1,4 @@
 streamlit
-
-opencv-python-headless
 # yolov5
 ultralytics
 
