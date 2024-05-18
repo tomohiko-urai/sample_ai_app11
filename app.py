@@ -30,7 +30,7 @@ img_file = st.camera_input("カメラで撮影")
 if img_file is not None:
     with st.spinner("推定中..."):
         img = Image.open(img_file)
-        st.image(img, caption="対象の画像", width=380)
+        #st.image(img, caption="対象の画像", width=380)
         #st.image(img, caption="対象の画像", width=480)
         st.write("")
 
