@@ -47,6 +47,6 @@ if img_file is not None:
     with col2:       
         #st.subheader("判定結果")
         st.subheader("判定結果")
-        st.image(annotated_frame, caption='出力画像', width=380) 
+        st.image(annotated_frame, caption='出力画像', width=280) 
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
