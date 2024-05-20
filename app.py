@@ -26,12 +26,12 @@ st.sidebar.write("")
 #elif img_source == "カメラで撮影":
     #img_file = st.camera_input("カメラで撮影")
 
-col1, col2 = st.columns(2)
+#col1, col2 = st.columns(2)
 
-with col1:
- img_file = st.camera_input("カメラで撮影")
+#with col1:
+    img_file = st.camera_input("カメラで撮影")
 
-with col2:
+#with col2:
 if img_file is not None:
     with st.spinner("推定中..."):
         img = Image.open(img_file)
