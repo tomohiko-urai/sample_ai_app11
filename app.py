@@ -46,7 +46,7 @@ if img_file is not None:
         
     
         # 結果の表示
-    with col2:       
+    #with col2:       
         #st.subheader("判定結果")
         st.subheader("判定結果")
         st.image(annotated_frame, caption='出力画像', width=280) 
