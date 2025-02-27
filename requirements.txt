@@ -8,6 +8,7 @@ opencv-python-headless==4.6.0.66
 Pillow==10.1.0
 ##**** 20250228*******
 #torch>=1.8
+torch==1.8
 
 #python>=3.8.0
 #*********
