@@ -41,13 +41,13 @@ if img_file is not None:
         st.write("")
 
         img = img.convert("RGB")
-       # img = img.resize((image_size,image_size))
+       # img = img.resize((image_size,image_size))ca
         
         model = YOLO('last.pt')
         ret = model(img,save=True, conf=0.2, iou=0.1)
         annotated_frame = ret[0].plot(labels=True,conf=True)
         annotated_frame = cv2.cvtColor(annotated_frame , cv2.COLOR_BGR2RGB)
-        
+        categories = ret[0].boxes.cls
     
         # 結果の表示
     #with col2:       
@@ -56,3 +56,4 @@ if img_file is not None:
         st.image(annotated_frame, caption='出力画像', width=280) 
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
+        st.write(categories +  "です。")
