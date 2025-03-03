@@ -58,4 +58,4 @@ if img_file is not None:
       
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
-        st.write(categories)
+        st.write(categories[0])
