@@ -33,8 +33,10 @@ elif img_source == "カメラで撮影":
 #with col2:
 if img_file is not None:
     with st.spinner("推定中..."):
+           #if  img_source == "カメラで撮影":
         img = Image.open(img_file)
-        st.image(img, caption="対象の画像", width=280)
+        if  img_source != "カメラで撮影":
+           st.image(img, caption="対象の画像", width=280)
         st.write("")
 
         img = img.convert("RGB")
