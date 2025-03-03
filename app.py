@@ -37,6 +37,7 @@ if img_file is not None:
         img = Image.open(img_file)
         if  img_source != "カメラで撮影":
            st.image(img, caption="対象の画像", width=280)
+          
         st.write("")
 
         img = img.convert("RGB")
