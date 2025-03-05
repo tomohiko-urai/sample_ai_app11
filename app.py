@@ -31,7 +31,7 @@ elif img_source == "カメラで撮影":
         img_file = st.camera_input("カメラで撮影")
 
 #with col2:
-if img_file is not None:
+if img_file is not None:  # max_y =max(scores)
     with st.spinner("推定中..."):
            #if  img_source == "カメラで撮影":
         img = Image.open(img_file)
@@ -51,8 +51,8 @@ if img_file is not None:
         boxes = ret[0].boxes.xyxy
         scores = ret[0].boxes.conf
         categories = ret[0].boxes.cls
-　      max_y = numpy.argmax(scores)
-        max_index = categories.index(max_y)
+　      max_y = max(scores)
+        max_index = categories.index(max_y)  # max_y =max(scores)
         # 結果の表示
     #with col2:       
         #st.subheader("判定結果")
