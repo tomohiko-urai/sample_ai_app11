@@ -52,14 +52,14 @@ if img_file is not None:  # max_y =max(scores)
         scores = ret[0].boxes.conf
         categories = ret[0].boxes.cls
         max_y = max(scores)
-        max_index = categories.index(max_y)  # max_y =max(scores)
+     #   max_index = categories.index(max_y)  # max_y =max(scores)
         # 結果の表示
     #with col2:       
         #st.subheader("判定結果")
         st.subheader("判定結果")
       #  st.image(annotated_frame, caption='出力画像', width=280) 
         st.image(annotated_frame, caption='出力画像', width=480)
-        st.write("判定:Shinemuscat",max_index," " + max_y)
+        st.write("判定:Shinemuscat"," " + max_y)
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
         #st.write(categories[0])
