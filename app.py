@@ -11,7 +11,7 @@ from ultralytics import YOLO
 
 image_size = 50
 
-
+  # max_y =max(scores)
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
 st.sidebar.title("シャインマスカット収穫時期判定アプリ-ai-app11")
@@ -58,9 +58,7 @@ if img_file is not None:  # max_y =max(scores)
         #st.subheader("判定結果")
         st.subheader("判定結果")
       #  st.image(annotated_frame, caption='出力画像', width=280) 
-        st.image(annotated_frame, caption='出力画像', width=480) 
-　　　　　
-
+        st.image(annotated_frame, caption='出力画像', width=480)
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
         #st.write(categories[0])
