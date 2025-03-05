@@ -48,17 +48,18 @@ if img_file is not None:
         annotated_frame = ret[0].plot(labels=True,conf=True)
         annotated_frame = cv2.cvtColor(annotated_frame , cv2.COLOR_BGR2RGB)
         #categories = ret[0].boxes.cls
-    
+        boxes = ret[0].boxes.xyxy
+        scores = ret[0].boxes.conf
+        categories = ret[0].boxes.cls
+　      max_y =max(scores)
+        max_index = categories.index(max_y)
         # 結果の表示
     #with col2:       
         #st.subheader("判定結果")
         st.subheader("判定結果")
       #  st.image(annotated_frame, caption='出力画像', width=280) 
         st.image(annotated_frame, caption='出力画像', width=480) 
-　　　　　scores = ret[0].boxes.conf
-　　　　　categories = ret[0].boxes.cls
-　　　　　max_y =max(scores)
-        max_index = categories.index(max_y)
+　　　　　
 
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
