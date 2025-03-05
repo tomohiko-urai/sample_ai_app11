@@ -55,7 +55,12 @@ if img_file is not None:
         st.subheader("判定結果")
       #  st.image(annotated_frame, caption='出力画像', width=280) 
         st.image(annotated_frame, caption='出力画像', width=480) 
-      
+　　　　　boxes = ret[0].boxes.xyxy
+　　　　　scores = ret[0].boxes.conf
+　　　　　categories = ret[0].boxes.cls
+　　　　　max_y =max(categories)
+        max_index = categories.index(max_y)
+
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
         #st.write(categories[0])
