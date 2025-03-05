@@ -51,7 +51,7 @@ if img_file is not None:  # max_y =max(scores)
         boxes = ret[0].boxes.xyxy
         scores = ret[0].boxes.conf
         categories = ret[0].boxes.cls
-　      max_y = max(scores)
+        max_y = max(scores)
         max_index = categories.index(max_y)  # max_y =max(scores)
         # 結果の表示
     #with col2:       
